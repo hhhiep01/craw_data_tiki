@@ -1,0 +1,27 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ===== Virtual Environment =====
+.venv/
+venv/
+env/
+
+# ===== PyCharm / IntelliJ =====
+.idea/
+
+# ===== CSV output lớn (generated data) =====
+data/*.csv
+*.csv
+
+# Nếu bạn muốn giữ sample.csv:
+# !sample.csv
+
+# ===== OS generated files =====
+.DS_Store
+Thumbs.db
+
+# ===== Git =====
+.git/
