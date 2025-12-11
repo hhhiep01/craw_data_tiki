@@ -1,27 +1,97 @@
-# ===== Python =====
+# ============================
+# Python cache / compiled files
+# ============================
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
 
-# ===== Virtual Environment =====
-.venv/
-venv/
+# ============================
+# Virtual environment
+# ============================
+.env
+.venv
 env/
+venv/
+ENV/
 
-# ===== PyCharm / IntelliJ =====
+# ============================
+# IDE / Editor folders
+# ============================
+.vscode/
 .idea/
+*.iml
 
-# ===== CSV output lớn (generated data) =====
-data/*.csv
-*.csv
-
-# Nếu bạn muốn giữ sample.csv:
-# !sample.csv
-
-# ===== OS generated files =====
+# ============================
+# OS generated files
+# ============================
 .DS_Store
 Thumbs.db
 
-# ===== Git =====
-.git/
+# ============================
+# Logs
+# ============================
+*.log
+logs/
+data/logs/*.log
+
+# ============================
+# Sensitive data
+# ============================
+config/*.env
+*.secret
+*.key
+
+# ============================
+# Crawler output files
+# (Không commit file JSON batch hoặc failed_records)
+# ============================
+data/processed/
+data/logs/failed_records.csv
+
+# ============================
+# Raw dataset input
+# ============================
+data/raw/*.csv
+!data/raw/README.md    # nếu bạn muốn keep file mô tả
+
+# ============================
+# Temporary / backup files
+# ============================
+*.tmp
+*.bak
+*.swp
+*.swl
+
+# ============================
+# Jupyter notebook temporary
+# ============================
+.ipynb_checkpoints/
+
+# ============================
+# compressed files
+# ============================
+*.gz
+*.zip
+*.tar
+*.7z
+
+# ============================
+# Reports / output auto-generated
+# ============================
+output/
+reports/
+
+# ============================
+# Python build artifacts
+# ============================
+build/
+dist/
+*.egg-info/
+
+# ============================
+# Cache folders (pytest, pip,...)
+# ============================
+.cache/
+pytest_cache/
+pip-wheel-metadata/
