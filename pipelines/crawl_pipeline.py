@@ -77,7 +77,7 @@ def run_crawl(batch_size: int | None = None, max_workers: int | None = None):
         except KeyboardInterrupt:
             from src.utils.notifier import send_discord_alert
 
-            send_discord_alert("Program has been stopped (Ctrl+C) inside ThreadPool.")
+            send_discord_alert("Program has been stopped inside ThreadPool.")
             executor.shutdown(wait=False, cancel_futures=True)
             raise
 
